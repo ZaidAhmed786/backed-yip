@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(https://next.thepic.store/frontend/4907157.WebP);
+  background-size: cover;
+}
+.center-div {
+  padding-top: 10%;
+  border-radius: 10px;
+}
+.btn.btn-success {
+  padding: 0.5em 5em;
+  border-radius: 0px 10px 0px 10px;
+}
+form {
+  padding: 0 3em;
+}
+#photo .title > span {
+  font-size: 0.8em;
+  text-align: left;
+}
+.photo-header {
+  /* background-color: aqua; */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  border-radius: 30px 0px 30px 0px;
+}
+.preview {
+  position: relative;
+  display: inline-block;
+}
+.preview img {
+  display: none;
+  margin: 0 auto;
+}
+
+.table-responsive {
+  height: 70vh;
+  overflow-y: scroll;
+}
+.table td {
+  vertical-align: middle;
+}
+.table-responsive::-webkit-scrollbar {
+  display: none !important;
+  z-index: -2;
+}
