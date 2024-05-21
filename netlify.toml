@@ -1,11 +1,25 @@
 [build]
-  publish = "public" # Path to your static files
-  functions = "functions" # Path to the directory for Netlify functions
+  publish = "public"
+  functions = "functions"
 
 [functions]
-  directory = "functions" # Ensure that your Node.js functions are recognized
+  node_bundler = "esbuild"
 
 [[redirects]]
   from = "/*"
   to = "/functions/netlify.js"
   status = 200
+
+[context.production.environment]
+  db = "mongodb+srv://leilanitech:RcsjnJoH04eDbWfI@yipbackend.oa7msqc.mongodb.net/yip?tls=true"
+  DB_PASSWORD = "saad8212"
+  MAILER = "uhlurtyahvlbgmxu"
+  RESET = "https://yip-dashboard.vercel.app/newPassword"
+  PORT = "3005"
+  CLOUD_NAME = "dafe58jjh"
+  API_KEY = "449396897292963"
+  API_SECRET = "CnB5RDTpZ5c0qrL-0gGYlgjgLDA"
+  BUCKET_NAME = "yip-storage"
+  BUCKET_REGION = "us-east-1"
+  SECRET_ACCESS_KEY = "yReVv5ccYfltW47ndJeMsg+iaV1DKhWCdNwtHypT"
+  ACCESS_KEY = "AKIA3ED7QJAMJRVMGKPH"
