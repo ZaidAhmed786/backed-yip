@@ -1,0 +1,11 @@
+[build]
+  publish = "public" # Path to your static files
+  functions = "functions" # Path to the directory for Netlify functions
+
+[functions]
+  directory = "functions" # Ensure that your Node.js functions are recognized
+
+[[redirects]]
+  from = "/*"
+  to = "/functions/netlify.js"
+  status = 200
